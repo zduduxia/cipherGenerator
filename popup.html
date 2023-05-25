@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="popup.css">
+  <title>Password Generator</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>随机密码生成器</h1>
+
+    <div id="options">
+      <label>
+        <span>密码长度:</span>
+        <input type="number" id="length" value="8" min="1" max="100">
+      </label>
+
+      <label>
+        <span>密码数量:</span>
+        <input type="number" id="quantity" value="1" min="1" max="100">
+      </label>
+
+      <label>
+        <span>所选字符:</span>
+        <div class="select-box">
+          <input type="checkbox" class="char-option" value="a-z" checked="checked">a-z
+          <input type="checkbox" class="char-option" value="A-Z" checked="checked">A-Z
+          <input type="checkbox" class="char-option" value="0-9" checked="checked">0-9
+          <input type="checkbox" class="char-option" value="!@#$%^&" >!@#$%^&
+        </div>
+      </label>
+
+      <label>
+        <span>排除字符:</span>
+        <input type="text" id="exclude">
+      </label>
+    </div>
+
+    <button id="generate">生成密码</button>
+
+    <div id="passwords"></div>
+
+    <button id="copy">复制到剪贴板</button>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>

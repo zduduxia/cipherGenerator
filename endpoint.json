@@ -1,0 +1,4 @@
+{
+    "api_host":"https://adm.sanguosha.cn/api/",
+    "gateway_host":"http://hi-gateway-staging.sanguosha.cn:30320/api/"
+}
